@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi primer pagina web</title>
+</head>
+	<body>
+	
+		<header id="header">
+			<h1>Pedrito Sola</h1>
+			<p>Nacio 1945</p>
+		</header>
+
+		<nav id="navigation" class="navigation-bar">
+			<ul>
+				<li>
+					<a class="active" href="https://es.wikipedia.org/wiki/Ventaneando"> Acerca</a>
+				</li>
+				<li>
+					<a href=""> Ventaneando</a>
+				</li>
+				<li>
+					<a href=""> Mayonesa</a>
+				</li>
+				<li>
+					<a href=""> McCormick</a>
+				</li>
+				<li>
+					<a href=""> Hellmann's</a>
+				</li>
+				<li class="menu-icon-list">
+					<a href="javascript:void(0)" onclick="showHamburgerMenu()">
+						<i class="lni lni-menu"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<div id="main-content-container">
+			<aside id="links-sidebar">
+				<p>Links</p>
+					<ul>
+						<li><a class="links" href=""> Carrera Artistica</a> </li>
+						<li><a class="links" href="">Su familia</a> </li>
+						<li><a class="links" href=""> Secretos</a> </li>
+					</ul>
+
+			</aside>
+			<section id="main-content">
+				<img src="images/Pedro-Sola.jpeg" alt="Foto de pedrito sola">
+				<div class="main-content__text">
+					<p>
+						Pedro Sola nació el 28 de enero de 1947 en Veracruz. Es licenciado en Economía, estudió en la Facultad de Economía de la Universidad Nacional Autónoma de México de 1965 a 1969.
+					</p>
+				</div>
+				<div class="artiles-content">
+					<article class="article">
+						<div class="article__image article__background" style="background-image: url(images/predro-1.jpeg)">
+						</div>
+						<h2 class="article__title">De conductor a Youtuber</h2>
+						<p class="article__text">Flexbox proporciona una propiedad llamada flex-direction que especifica</p>
+						<a href="" class="article__link">LEARN MORE</a>
+					</article>
+
+					<article  class="article">
+						<div class="article__image article__background" style="background-image: url(images/pedro-2.jpeg)">
+						</div>
+						<h2 class="article__title"> Demandado por Hellmanns</h2>
+						<p class="article__text">Flexbox proporciona una propiedad llamada flex-direction que especifica</p>
+						<a href="">LEARN MORE</a>
+					</article>
+
+					<article  class="article">
+						<div class="article__image article__background" style="background-image: url(images/pedro-3.jpeg)">
+						</div>
+						<h2 class="article__title">Ni el COVID lo tumbó</h2>
+						<p class="article__text">Flexbox proporciona una propiedad llamada flex-direction que especifica</p>
+						<a class="article__link" href="">LEARN MORE</a>
+					</article>
+				</div>
+			</section>
+
+		</div>
+
+	
+		<footer id="my-footer" class="footer__main_content">
+			<div class="footer__section">
+				<h5>Follow us</h5>
+				<div class="social-media__section">
+					<a href="https://www.linkedin.com/" target="_blank"><i class="lni lni-linkedin-original"></i></a>
+					<i class="lni lni-github-original"></i>
+				</div>
+			</div>
+			<div class="footer__section">
+				<h5>Contact us</h5>
+
+				<form>
+					<div class="form-group">
+						<label for="email">email:</label><br>
+						<input type="email" id="email" name="email" placeholder="Write your email" ><br><br>
+					</div>
+					<div class="form-group">
+						<label for="comments">Comments: </label><br>
+						<textarea name="comments" rows="10" cols="30">
+						</textarea>
+					</div>
+					<input type="submit" value="Submit">
+				</form>
+
+			</div>
+			<div class="footer__section">
+				<h5>Otros de mis sitios</h5>
+
+			</div>
+		</footer>
+
+
+	</body>
+	<script type="text/javascript">
+		
+		function showHamburgerMenu(){
+			const navigationBar = document.getElementById("navigation");
+			if(navigationBar.className === 'navigation-bar'){
+				navigationBar.className += ' responsive'
+			} else{
+				navigationBar.className = 'navigation-bar'
+			}
+		}
+	</script>
+
+</html>
